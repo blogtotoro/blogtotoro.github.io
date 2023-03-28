@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>1 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="使用 Cloudflare Workers 创建免OpenAI域名接口(免VPN)1.创建一个 Cloudflare Worker登录到 Cloudflare 的管理界面后，点击侧边栏的 “Workers” 选项，然后点击“Create a Service” 创建一个 Worker。 然后在创建界面中输入 “Service name” 后点击 “Create Service” 按钮新建 Worke">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1">
+<meta property="og:url" content="http://example.com/2023/03/28/1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="使用 Cloudflare Workers 创建免OpenAI域名接口(免VPN)1.创建一个 Cloudflare Worker登录到 Cloudflare 的管理界面后，点击侧边栏的 “Workers” 选项，然后点击“Create a Service” 创建一个 Worker。 然后在创建界面中输入 “Service name” 后点击 “Create Service” 按钮新建 Worke">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://qiniu.version.ga/222871270-d973e2bd-74f9-4efa-b080-e665903a7bac.png">
+<meta property="og:image" content="http://qiniu.version.ga/222871439-4ac253c6-d87f-434e-a8e8-3d05c652217d.png">
+<meta property="og:image" content="http://qiniu.version.ga/222871710-c1d4834e-3bb4-49cf-a9dd-b7dcee258112.png">
+<meta property="og:image" content="http://qiniu.version.ga/222872146-bf4c8f30-307a-4511-9be6-8c19db5cab43.png">
+<meta property="og:image" content="http://qiniu.version.ga/222872491-026600f5-c04c-49c5-9fdf-4d4abb0b66f7.png">
+<meta property="article:published_time" content="2023-03-28T14:51:51.000Z">
+<meta property="article:modified_time" content="2023-03-28T15:28:50.010Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://qiniu.version.ga/222871270-d973e2bd-74f9-4efa-b080-e665903a7bac.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/03/28/1/" class="article-date">
+  <time class="dt-published" datetime="2023-03-28T14:51:51.000Z" itemprop="datePublished">2023-03-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      1
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="使用-Cloudflare-Workers-创建免OpenAI域名接口-免VPN"><a href="#使用-Cloudflare-Workers-创建免OpenAI域名接口-免VPN" class="headerlink" title="使用 Cloudflare Workers 创建免OpenAI域名接口(免VPN)"></a>使用 Cloudflare Workers 创建免OpenAI域名接口(免VPN)</h1><h3 id="1-创建一个-Cloudflare-Worker"><a href="#1-创建一个-Cloudflare-Worker" class="headerlink" title="1.创建一个 Cloudflare Worker"></a>1.创建一个 Cloudflare Worker</h3><p>登录到 Cloudflare 的管理界面后，点击侧边栏的 “Workers” 选项，然后点击“Create a Service” 创建一个 Worker。<br><img src="http://qiniu.version.ga/222871270-d973e2bd-74f9-4efa-b080-e665903a7bac.png"></p>
+<p>然后在创建界面中输入 “Service name” 后点击 “Create Service” 按钮新建 Worker。“Select a starter” 项先不用管。<br><img src="http://qiniu.version.ga/222871439-4ac253c6-d87f-434e-a8e8-3d05c652217d.png"><br>至此 Cloudflare 的 Worker 便创建好了，下面开始修改 Worker 的代码，使其能代理 OpenAI 的 API。</p>
+<h3 id="2-修改-Cloudflare-Worker-的代码"><a href="#2-修改-Cloudflare-Worker-的代码" class="headerlink" title="2.修改 Cloudflare Worker 的代码"></a>2.修改 Cloudflare Worker 的代码</h3><p>在 Worker 的管理界面，点击右上角的 “Quick Edit” 按钮编辑代码 Worker 的代码。<br><img src="http://qiniu.version.ga/222871710-c1d4834e-3bb4-49cf-a9dd-b7dcee258112.png"></p>
+<p>在左侧的代码编辑器中，删除现有的所有代码，然后复制粘贴以下内容到代码编辑器：<br>简化后的代码来自 <a target="_blank" rel="noopener" href="https://github.com/x-dr/chatgptProxyAPI">https://github.com/x-dr/chatgptProxyAPI</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">const TELEGRAPH_URL = &#x27;https://api.openai.com&#x27;;</span><br><span class="line"></span><br><span class="line">addEventListener(&#x27;fetch&#x27;, event =&gt; &#123;</span><br><span class="line">  event.respondWith(handleRequest(event.request))</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">async function handleRequest(request) &#123;</span><br><span class="line">  const url = new URL(request.url);</span><br><span class="line">  url.host = TELEGRAPH_URL.replace(/^https?:\/\//, &#x27;&#x27;);</span><br><span class="line"></span><br><span class="line">  const modifiedRequest = new Request(url.toString(), &#123;</span><br><span class="line">    headers: request.headers,</span><br><span class="line">    method: request.method,</span><br><span class="line">    body: request.body,</span><br><span class="line">    redirect: &#x27;follow&#x27;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  const response = await fetch(modifiedRequest);</span><br><span class="line">  const modifiedResponse = new Response(response.body, response);</span><br><span class="line"></span><br><span class="line">  // 添加允许跨域访问的响应头</span><br><span class="line">  modifiedResponse.headers.set(&#x27;Access-Control-Allow-Origin&#x27;, &#x27;*&#x27;);</span><br><span class="line"></span><br><span class="line">  return modifiedResponse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>最后点击编辑器右下角的 “Save and deploy” 按钮部署该代码，在弹出的对话框中继续选择 “Save and deploy” 确认部署。</p>
+<p><img src="http://qiniu.version.ga/222872146-bf4c8f30-307a-4511-9be6-8c19db5cab43.png"></p>
+<p>至此，便可以使用该 worker 的地址来代替 OpenAI 的 API 地址了。比如想要请求 ChatGPT 的 API 时，把官方文档中的 <a target="_blank" rel="noopener" href="https://api.openai.com/v1/chat/completions">https://api.openai.com/v1/chat/completions</a> 替换成 <a target="_blank" rel="noopener" href="https://openai.workers.dev/">https://openai.workers.dev</a> 即可（注意这个地址并不存在，是需要换成自己刚刚创建的 Worker 的地址）。</p>
+<p>但是你可能会发现，这样做了依然还是没有解决问题，因为 Cloudflare Workers 的 workers.dev 域名也是被 GFW 认证过的🥲。但是好在只是认证了 workers.dev 域名，而 ip 还是幸存的状态，所以我们可以给 Worker 绑定一个自己的域名。</p>
+<h3 id="3-绑定域名"><a href="#3-绑定域名" class="headerlink" title="3.绑定域名"></a>3.绑定域名</h3><p>在 Cloudflare Workers 的管理界面中，点击 “Triggers” 选项卡，然后点击 “Custom Domians” 中的 “Add Custom Domain” 按钮以绑定域名。<br><img src="http://qiniu.version.ga/222872491-026600f5-c04c-49c5-9fdf-4d4abb0b66f7.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/03/28/1/" data-id="clfsdmevq000060vk4lej6h7d" data-title="1" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/03/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/03/28/1/">1</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
