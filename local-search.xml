@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Regex.ai – 让 AI 帮你写正则表达式｜再也不用学习正则了</title>
+    <link href="/2023/03/30/2/"/>
+    <url>/2023/03/30/2/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Regex-ai-–-让-AI-帮你写正则表达式｜再也不用学习正则了"><a href="#Regex-ai-–-让-AI-帮你写正则表达式｜再也不用学习正则了" class="headerlink" title="Regex.ai – 让 AI 帮你写正则表达式｜再也不用学习正则了"></a>Regex.ai – 让 AI 帮你写正则表达式｜再也不用学习正则了</h1><p>Regex.ai 是一款所见即所得的，基于 AI 的正则表达式自动生成工具，只需要选择出数据，它就能帮你写正则表达式，并提供多种提取数据的方式。再也不用学习正则了。</p><h3 id="第一代：看教程"><a href="#第一代：看教程" class="headerlink" title="第一代：看教程"></a>第一代：看教程</h3><p><img src="http://qiniu.version.ga/%E6%88%AA%E5%B1%8F2023-03-30%2001.30.54.png"><br>这是什么鬼？看不懂！</p><h3 id="第二代：搜例子"><a href="#第二代：搜例子" class="headerlink" title="第二代：搜例子"></a>第二代：搜例子</h3><p><img src="http://qiniu.version.ga/%E6%88%AA%E5%B1%8F2023-03-30%2001.36.56.png"><br>这里子不合适啊，摔！<br>如果恰好能找到需要的例子，直接用就好。如果找不到…</p><h3 id="第三代：在线测试"><a href="#第三代：在线测试" class="headerlink" title="第三代：在线测试"></a>第三代：在线测试</h3><p><img src="http://qiniu.version.ga/%E6%88%AA%E5%B1%8F2023-03-30%2001.37.16.png"><br>有了前两代的经验，使用在线工具，就能自己验证有效性了。<br>对于调试正则表达式，还是非常方便的。<br>当然，你还是需要有正则表达式才行。</p><h3 id="第四代：AI-时代"><a href="#第四代：AI-时代" class="headerlink" title="第四代：AI 时代"></a>第四代：AI 时代</h3><p><img src="http://qiniu.version.ga/%E6%88%AA%E5%B1%8F2023-03-30%2001.37.16.png"><br>虽然，已经足够方便的了，但不够直观呀。</p><h3 id="第四代半：Regex-ai"><a href="#第四代半：Regex-ai" class="headerlink" title="第四代半：Regex.ai"></a>第四代半：Regex.ai</h3><p>同样基于 AI 技术，Regex.ai 相比于 ChatGPT 更加直观，不再需要用语言描述，而是直接选择你想要获取的部分，就自动完成了。</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=654290029&bvid=BV1uY4y1D7LP&cid=1074882074&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div><h3 id="获取使用"><a href="#获取使用" class="headerlink" title="获取使用"></a>获取使用</h3><ul><li><a href="https://kutt.appinn.com/kuULSe">Regex.ai 官网</a></li></ul><h2 id="最后，什么是正则表达式"><a href="#最后，什么是正则表达式" class="headerlink" title="最后，什么是正则表达式"></a>最后，什么是正则表达式</h2><p>正则表达式就是一种用来匹配字符的表达式，它可以帮助我们找到一些特定的规律，比如一段文本中的所有电话号码、电子邮件地址等等。</p><p>我们可以把正则表达式看成一个很厉害的筛子，筛子里头有很多孔，我们可以根据我们想要的规律去挑选不同的孔来筛选出我们想要的信息。</p><p>比如，如果我们想要找出一段文字中的所有电子邮箱地址，我们就可以在筛子里头挑选出能够匹配邮箱地址的那些孔，然后把这个筛子放在文本上面筛一遍，就可以找出所有符合条件的电子邮箱地址了。</p><p>当然，正则表达式不止可以用来匹配电子邮箱地址，还可以用来匹配电话号码、网址、日期等等各种形式的信息。因此，正则表达式是程序员们在处理文本数据的时候非常实用的工具，可以帮助我们更快地找出我们想要的信息</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>使用 Cloudflare Workers 创建免OpenAI域名接口(免VPN)</title>
     <link href="/2023/03/28/%E4%BD%BF%E7%94%A8%20Cloudflare%20Workers%20%E5%88%9B%E5%BB%BA%E5%85%8DOpenAI%E5%9F%9F%E5%90%8D%E6%8E%A5%E5%8F%A3(%E5%85%8DVPN)/"/>
     <url>/2023/03/28/%E4%BD%BF%E7%94%A8%20Cloudflare%20Workers%20%E5%88%9B%E5%BB%BA%E5%85%8DOpenAI%E5%9F%9F%E5%90%8D%E6%8E%A5%E5%8F%A3(%E5%85%8DVPN)/</url>
